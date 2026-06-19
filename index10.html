@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz về Phan Thanh Phong</title>
+    <style>
+        body { font-family: 'Segoe UI', sans-serif; background-color: #f0f2f5; padding: 20px; }
+        .container { max-width: 600px; background: white; padding: 30px; border-radius: 15px; box-shadow: 0 4px 10px rgba(0,0,0,0.1); margin: auto; }
+        h1 { text-align: center; color: #1a73e8; }
+        .question { margin-top: 20px; font-weight: bold; color: #333; }
+        input[type="text"], textarea { width: 100%; padding: 12px; margin-top: 8px; border: 1px solid #ddd; border-radius: 8px; box-sizing: border-box; }
+        button { width: 100%; padding: 15px; margin-top: 25px; background-color: #1a73e8; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; }
+        button:hover { background-color: #1557b0; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Quiz về Phan Thanh Phong</h1>
+    <p style="text-align:center;">Chào mọi người! Cùng trả lời vài câu hỏi để xem mọi người hiểu về mình thế nào nhé!</p>
+
+    <!-- Đã tích hợp Endpoint từ image_3a7fc0.png -->
+    <form action="https://formspree.io/f/mzdqndyb" method="POST">
+        
+        <div class="question">Tên của bạn là gì?</div>
+        <input type="text" name="Ten_Nguoi_Tham_Gia" required placeholder="Nhập tên bạn...">
+
+        <div class="question">1. Bạn biết Phong từ đâu và bao lâu rồi?</div>
+        <input type="text" name="Cau_1" placeholder="Ví dụ: Bạn học, bạn đá bóng...">
+
+        <div class="question">2. Nếu dùng 3 từ để miêu tả về Phong, bạn chọn từ nào?</div>
+        <input type="text" name="Cau_2" placeholder="Ví dụ: Vui tính, nhiệt tình, lầy lội...">
+
+        <div class="question">3. Bạn thấy Phong là người như thế nào trong mắt bạn?</div>
+        <textarea name="Cau_3" rows="3" placeholder="Hãy viết suy nghĩ thật của bạn..."></textarea>
+
+        <div class="question">4. Bạn nghĩ điều gì làm Phong khác biệt nhất với mọi người?</div>
+        <textarea name="Cau_4" rows="3" placeholder="Chia sẻ cảm nhận của bạn..."></textarea>
+
+        <div class="question">5. Một lời nhắn nhủ hoặc câu hỏi bạn muốn gửi đến Phong:</div>
+        <textarea name="Cau_5" rows="3" placeholder="Viết gì đó cho Phong đi..."></textarea>
+
+        <button type="submit">Gửi câu trả lời cho Phong</button>
+    </form>
+</div>
+
+</body>
+</html>
